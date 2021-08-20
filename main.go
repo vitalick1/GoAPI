@@ -14,6 +14,7 @@ import (
 func main() {
 	r := mux.NewRouter()
 
+	//todo: move this dependency resolve to a separate method
 	accFactory := model.AccountFactory{}
 	accRepoFactory := repository.AccountRepositoryFactory{}
 
